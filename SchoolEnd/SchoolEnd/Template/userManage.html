@@ -1,0 +1,45 @@
+{% extends 'adminTop.html' %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		{% block css2 %}
+		<link rel="stylesheet" type="text/css" href="/static/css/userManage.css" />
+		{% endblock %}
+	</head>
+	<body>
+		{% block content %}
+		<div id="myContent">
+			<div id="cscrf">{{ csrf }}</div>
+			<table id="userTable">
+				<tr>
+					<th id="searchId"><input type="number" id="id" /></th>
+					<th id="searchName"><input type="text" id="name" /></th>
+					<th id="searchPwd"><input type="text" id="pwd" /></th>
+					<th id="postData"><button>查找</button></th>
+					<th id="addUser"><button>添加用户</button></th>
+				</tr>
+				<tr>
+					<td><p>用户Id</p></td>
+					<td><p>用户昵称</p></td>
+					<td><p>用户密码</p></td>
+					<td colspan="2"><p>操作</p></td>
+				</tr>
+				{% for user in data %}
+				<tr>
+					<td><p>{{ user.Id }}</p></td>
+					<td><p>{{ user.name }}</p></td>
+					<td><p>{{ user.password }}</p></td>
+					<td><button id="{{ user.Id }}" onclick="deleteUser(this)">删除</button></td>
+					<td><button id="{{ user.Id }}" onclick="changeUser(this)">修改</button></td>
+				</tr>
+				{% endfor %}
+			</table>
+		</div>
+	{% endblock %}
+	</body>
+	{% block javascript %}
+		<script type="text/javascript" src="/static/js/userManage.js"></script>
+	{% endblock %}
+</html>

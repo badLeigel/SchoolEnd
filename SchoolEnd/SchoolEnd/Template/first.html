@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		{% block css2 %}
+		<link rel="stylesheet" type="text/css" href="/static/css/first.css" />
+		{% endblock %}
+	</head>
+	<body>
+		{% block content %}
+		<div id="myContent">
+			<div id="contentTop">
+				<div id="container">
+					<img src="/static/image/1.jpg" />
+					<img src="/static/image/2.jpg" />
+					<img src="/static/image/3.jpg" />
+				</div>
+			</div>
+			{% for p in data %}
+			<div class="contentView" id="{{ p.worksId }}">
+				<p class="worksTitle">{{ p.title }}</p>
+				<p class="worksContent">{{ p.content }}</p>
+			</div>
+			{% endfor %}
+
+		</div>
+		{% endblock %}
+	</body>
+	{% block javascript %}
+		<script type="text/javascript" src="/static/js/first.js"></script>
+	{% endblock %}
+</html>

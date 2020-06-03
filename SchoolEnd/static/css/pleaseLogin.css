@@ -1,0 +1,23 @@
+*{
+	margin: 0px;
+}
+#myContent{
+	width: 800px;
+	padding-top: 150px;
+	margin-left: 560px;
+    background: #512144;
+}
+#myContent p{
+font-size:36px;
+text-align:center;
+color:red;
+}
+#loginButton{
+width:200px;
+height:100px;
+margin-top:100px;
+margin-left:300px;
+background:#cccccc;
+color:#ffffff;
+font-size:50px;
+}

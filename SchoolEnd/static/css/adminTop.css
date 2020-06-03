@@ -1,0 +1,56 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+
+#viewTop{
+	height:100px;
+	background:#061334;
+	padding-left:470px;
+	overflow: hidden;
+}
+#viewContent div{
+	padding-top: 38px;
+}
+#logo{
+	float:left;
+}
+#logoText{
+	width:286px;
+	padding-left:13px;
+	float: left;
+	color: #ebf4cd;
+}
+#logoText p{
+	font-size: 48px;
+	line-height: 38px;
+}
+#logoText p:hover{
+	cursor: default;
+}
+
+#login{
+float:left;
+margin-left:100px;
+}
+#login p{
+	line-height: 38px;
+	font-size: 48px;
+	color: #BFC0C1;
+}
+#login p:hover{
+	cursor: pointer;
+}
+
+#choise1{
+	background: #050c1c;
+}
+#userName{
+cursor:pointer;
+}
+
+a{
+    text-decoration:none;
+}
+

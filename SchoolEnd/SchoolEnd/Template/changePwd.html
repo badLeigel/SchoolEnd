@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		{% block css2 %}
+		<link rel="stylesheet" type="text/css" href="/static/css/login.css" />
+		{% endblock %}
+	</head>
+	<body>
+	{% block content %}
+		<div id="myContent">
+			<div id="logoinDiv">
+				<div id="loginText">
+					<p>请更改</p>
+				</div>
+				<div id="loginView">
+					{% csrf_token %}
+					<div id="account">
+						<p>昵称:</p>
+						<input id="accountInput" type="text" />
+					</div>
+					<div id="password">
+						<p>密码:</p>
+						<input id="passwordInput" type="password" />
+					</div>
+					<button id="registeredButton" style="margin-left:185px"><p>更改</p></button>
+				</div>
+			</div>
+		</div>
+	{% endblock %}
+	</body>
+	{% block javascript %}
+	<script type="text/javascript" src="/static/js/changePwd.js"></script>
+	{% endblock %}
+</html>

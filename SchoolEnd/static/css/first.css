@@ -1,0 +1,58 @@
+*{
+	margin: 0px;
+}
+#myContent{
+	width: 800px;
+	margin-left: 560px;
+    background: #512144;
+}
+#contentTop{
+	width: 800px;
+	height: 300px;
+}
+#container{
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+	margin-left: 200px;
+}
+#container img{
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+.contentView{
+	width: 615px;
+	height: 246px;
+	margin-top: 10px;
+	margin-left: 110px;
+	padding-top: 22px;
+	background: rgba(255,255,255,0.5);
+	box-shadow: 5px 5px 10px #000000 ;
+	transition: all 1s;
+	-moz-transition: all 1s;	/* Firefox 4 */
+	-webkit-transition: all 1s;	/* Safari 和 Chrome */
+	-o-transition: all 1s;	/* Opera */
+}
+.contentView:hover{
+	margin-left:42px;
+	width: 750px;
+	height: 300px;
+	background:rgba(255,255,255,0.7);
+}
+.worksTitle{
+	font-size: 36px;
+	color: #ffffff;
+	margin-left:42px;
+}
+.worksContent{
+	font-size: 24PX;
+	color: #ffffff;
+	margin-left: 42px;
+	margin-top: 0px;
+}
+#bottom{
+	height: 200px;
+	margin-left: 275px;
+	margin-top: 20px;
+}

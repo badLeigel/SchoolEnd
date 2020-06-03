@@ -1,0 +1,41 @@
+{% extends 'adminTop.html' %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		{% block css2 %}
+		<link rel="stylesheet" type="text/css" href="/static/css/adminChangeUser.css" />
+		{% endblock %}
+	</head>
+	<body>
+	    {% block content %}
+		<div id="myContent">
+			<div id="logoinDiv">
+				<div id="loginText">
+					<p>请修改</p>
+				</div>
+				<div id="loginView">
+					<div id="csrf">{% csrf_token %}</div>
+					<div id="account">
+						<p>账号:</p>
+						<input id="accountInput" value="{{ data.id }}" type="number" />
+					</div>
+                    <div id="name">
+						<p>昵称:</p>
+						<input id="username" value="{{ data.name }}" type="text" />
+					</div>
+					<div id="password">
+						<p>密码:</p>
+						<input id="passwordInput" value="{{ data.password }}" type="password" />
+					</div>
+					<button id="loginButton"><p>修改</p></button>
+				</div>
+			</div>
+		</div>
+		{% endblock %}
+	</body>
+	{% block javascript %}
+	<script type="text/javascript" src="/static/js/adminChangeUser.js"></script>
+	{% endblock %}
+</html>

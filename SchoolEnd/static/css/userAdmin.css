@@ -1,0 +1,40 @@
+*{
+	margin: 0px;
+}
+#contentView{
+	width: 800px;
+	height: 1000px;
+	background:#512144;
+	padding-left:145px;
+	padding-top: 246px;
+	margin-left:560px;
+}
+#change{
+	width: 200px;
+	height:200px;
+	background: rgba(255,255,255,0.57);
+	float: left;
+	padding-top: 106px;
+	padding-left:40px;
+}
+#change p{
+	font-size: 30px;
+}
+#change p:hover{
+	cursor:pointer;
+}
+#changePwd{
+	width: 200px;
+	height:200px;
+	background: rgba(255,255,255,0.57);
+	float: left;
+	margin-left: 103px;
+	padding-top: 106px;
+	padding-left:40px;
+}
+#changePwd p{
+	font-size: 30px;
+}
+#changePwd p:hover{
+	cursor: pointer;
+}

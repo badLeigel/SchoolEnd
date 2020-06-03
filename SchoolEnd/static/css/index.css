@@ -1,0 +1,83 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+
+#viewTop{
+	height:100px;
+	background:#061334;
+	padding-left:470px;
+	overflow: hidden;
+}
+#viewContent div{
+	padding-top: 38px;
+}
+#logo{
+	float:left;
+}
+#logoText{
+	width:286px;
+	padding-left:13px;
+	float: left;
+	color: #ebf4cd;
+}
+#logoText p{
+	font-size: 48px;
+	line-height: 38px;
+}
+#logoText p:hover{
+	cursor: default;
+}
+
+.choise{
+	width: 140px;
+	height: 100px;
+	padding-left: 30px;
+	float: left;
+}
+.choise p{
+	color: white;
+	font-size: 24px;
+	line-height: 38px;
+	color: #bfc0c1;
+}
+.choise p:hover{
+	cursor: pointer;
+}
+#search{
+	float: left;
+}
+#search input{
+	width: 142px;
+	height: 26px;
+	background: white;
+	float: left;
+	border-radius: 8px;
+}
+#login{
+	height: 100px;
+	padding-left:39px ;
+	float: left;
+}
+
+#login p{
+	line-height: 38px;
+	font-size: 24px;
+	color: #BFC0C1;
+}
+#login p:hover{
+	cursor: pointer;
+}
+
+#choise1{
+	background: #050c1c;
+}
+#userName{
+cursor:pointer;
+}
+
+a{
+    text-decoration:none;
+}
+

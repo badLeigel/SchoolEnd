@@ -1,0 +1,34 @@
+{% extends 'adminTop.html' %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		{% block css2 %}
+		<link rel="stylesheet" type="text/css" href="/static/css/uploadWorks.css" />
+		{% endblock %}
+	</head>
+	<body>
+		{% block content %}
+			<div id="myContent">
+				<form id='form1'>
+				{% csrf_token %}
+				<div id="title">
+					<textarea name="title">{{ works.title }}</textarea>
+				</div>
+				<div id="worksContent">
+					<textarea name="content">{{ works.content }}</textarea>
+				</div>
+				<div id="uploadButton">
+					<button>
+						<p>修改</p>
+					</button>
+				</div>
+				</form>
+			</div>
+	{% endblock %}
+	</body>
+	{% block javascript %}
+	<script type="text/javascript" src="/static/js/changeWorks.js"></script>
+	{% endblock %}
+</html>

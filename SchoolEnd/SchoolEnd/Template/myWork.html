@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block css2 %}
+    <link rel="stylesheet" type="text/css" href="/static/css/myWorks.css" />
+{% endblock %}
+{% block content %}
+<div id="myContent">
+    <table id="worksTable">
+        {% for works in data %}
+        <tr>
+            <td>
+                <p id="{{ works.id }}" class="title">{{ works.title }}</p>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    <button style="position:fixed; left:600px; bottom:100px; background:rgba(255,255,255,0.57)">
+        <a href="/static/yuanLiTu/proteus.rar" style="color:black">下载硬件原理图</a>
+    </button>
+</div>
+{% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="/static/js/myWorks.js"></script>
+{% endblock %}

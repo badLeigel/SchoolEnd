@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+		<title>小熊游戏网</title>
+		<link rel="shortcut icon" href="/static/image/logo.ico" type="image/x-icon">
+		<link rel="icon" href="/static/image/logo.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="/static/css/adminTop.css" />
+    {% block css2 %} {% endblock %}
+</head>
+<body>
+    <div id="main">
+			<div id="viewTop">
+				<div id="viewContent">
+					<div id="logo">
+						<image src="/static/image/logo.jpg"></image>
+					</div>
+					<div id="logoText">
+						<p>小熊游戏网</p>
+					</div>
+					<div id="login">
+						<p>管理员系统</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    {% block content %} {% endblock %}
+</body>
+<script type="text/javascript" src="/static/js/jquery.js"></script>
+<script type="text/javascript" src="/static/js/jquery-cookie/jquery.cookie.js"></script>
+{% block javascript %} {% endblock %}
+</html>

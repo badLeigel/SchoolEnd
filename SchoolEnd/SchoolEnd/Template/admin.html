@@ -1,0 +1,26 @@
+{% extends 'adminTop.html' %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		{% block css2 %}
+		<link rel="stylesheet" type="text/css" href="/static/css/userAdmin.css" />
+		{% endblock %}
+	</head>
+	<body>
+	{% block content %}
+		<div id="contentView">
+			<div id="change">
+				<p>用户管理</p>
+			</div>
+			<div id="changePwd">
+				<p>作品管理</p>
+			</div>
+		</div>
+	{% endblock %}
+	</body>
+	{% block javascript %}
+		<script type="text/javascript" src="/static/js/admin.js"></script>
+	{% endblock %}
+</html>

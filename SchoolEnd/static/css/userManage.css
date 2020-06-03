@@ -1,0 +1,49 @@
+*{
+	margin: 0px;
+	text-align: center;
+	color: rgba(255,255,255,0.57);
+}
+button{
+	color: #000000;
+}
+p{
+	cursor: pointer;
+}
+input{
+    color:#000000;
+}
+#myContent{
+	width: 800px;
+	padding-top: 100px;
+	padding-left: 94px;
+	margin-left: 560px;
+    background: #512144;
+}
+
+#userTable{
+	width: 650px;
+	float: left;
+	margin-left: 0px;
+	background: #512144;
+	border-collapse:collapse;
+}
+
+#userTable,tr,td,th{
+	border: 2px solid rgba(255,255,255,0.57);
+}
+#userTable tr{
+	height: 49px;
+}
+#searchId,#searchId input{
+	width: 100px;
+}
+#searchName,#searchName input{
+	width: 200px;
+}
+#searchPwd,#searchPwd input{
+	width: 200px;
+}
+#postData{
+	width: 45px;
+}
+

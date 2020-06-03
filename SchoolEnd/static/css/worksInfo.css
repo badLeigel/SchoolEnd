@@ -1,0 +1,32 @@
+*{
+	margin: 0px;
+}
+#myContent{
+	width: 800px;
+	margin-left:560px;
+	background: #512144;
+	padding-top:50px;
+	padding-left:145px ;
+}
+#title{
+	width: 550px;
+	text-align: center;
+	font-size: 36px;
+	color: #FFFFFF;
+}
+.content{
+	width: 550px;
+	font-size: 24px;
+	color:rgb(42,209,211);
+}
+#download{
+	width: 150px;
+	height: 52px;
+	margin-left: 401px;
+	background-color:rgb(71,78,74);
+}
+#download p{
+	font-size: 24px;
+	text-align: center;
+	color: #ffffff;
+}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		{% block css2 %}
+		<link rel="stylesheet" type="text/css" href="/static/css/login.css" />
+		{% endblock %}
+	</head>
+	<body>
+	    {% block content %}
+		<div id="myContent">
+			<div id="logoinDiv">
+				<div id="loginText">
+					<p>请登录</p>
+				</div>
+				<div id="loginView">
+					<div id="account">
+						{% csrf_token %}
+						<p>账号:</p>
+						<input id="accountInput" type="number" />
+					</div>
+					<div id="password">
+						<p>密码:</p>
+						<input id="passwordInput" type="password" />
+					</div>
+					<button id="loginButton"><p>登录</p></button>
+					<button id="registeredButton"><p>注册</p></button>
+				</div>
+			</div>
+		</div>
+		{% endblock %}
+	</body>
+	{% block javascript %}
+	<script type="text/javascript" src="/static/js/login.js"></script>
+	{% endblock %}
+</html>

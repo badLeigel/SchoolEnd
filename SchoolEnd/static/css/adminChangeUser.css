@@ -1,0 +1,106 @@
+*{
+	margin: 0px;
+}
+#myContent{
+	width: 800px;
+	padding-top: 150px;
+	margin-left: 560px;
+    background: #512144;
+}
+#logoinDiv{
+	width:520px;
+	height: 650px;
+	margin-left: 150px;
+	background:rgba(255,255,255,0.57);
+	border-radius: 5px;
+}
+#loginText{
+	width: 353px;
+	height: 100px;
+	float: left;
+	background: rgba(27,24,27,0.57);
+	padding-top: 26px;
+	padding-left: 167px;
+}
+#loginText p{
+	font-size: 48px;
+	color: #ffffff;
+}
+
+#account{
+	width: 723px;
+	height: 68px;
+	float: left;
+	margin-left: 22px;
+	margin-top: 52px;
+}
+#account p{
+	font-size: 48px;
+	color: #FFFFFF;
+	float: left;
+}
+#account input{
+	width: 263px;
+	height: 67px;
+	border: 2px solid #ffe952;
+	font-size: 30px;
+}
+#password{
+	width: 723px;
+	height: 68px;
+	float: left;
+	margin-left: 22px;
+	margin-top: 52px;
+}
+#password p{
+	font-size: 48px;
+	color: #FFFFFF;
+	float: left;
+}
+#password input{
+	width: 263px;
+	height: 67px;
+	border: 2px solid #ffe952;
+	font-size: 30px;
+}
+
+#loginButton{
+	width: 150px;
+	height: 70px;
+	margin-left:185px;
+	margin-top: 52px;
+	background: #5d5258;
+}
+#loginButton p{
+	font-size: 30px;
+	color: #FFFFFF;
+}
+#registeredButton{
+	width: 150px;
+	height: 70px;
+	margin-left:97px;
+	margin-top: 52px;
+	background: #5d5258;
+}
+#registeredButton p{
+	font-size: 30px;
+	color: #FFFFFF;
+}
+#name{
+    width: 723px;
+	height: 68px;
+	float: left;
+	margin-left: 22px;
+	margin-top: 52px;
+}
+#name p{
+    font-size: 48px;
+	color: #FFFFFF;
+	float: left;
+}
+#name input{
+    width: 263px;
+	height: 67px;
+	border: 2px solid #ffe952;
+	font-size: 30px;
+}

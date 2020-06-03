@@ -1,0 +1,25 @@
+*{
+	margin: 0px;
+}
+#myContent{
+	width: 800px;
+	padding-top: 150px;
+	margin-left: 560px;
+    background: #512144;
+}
+#worksTable{
+    margin-left:42px;
+}
+.title{
+    color:rgb(231,223,103);
+    font-size:24px;
+}
+.title:hover{
+    cursor:pointer;
+}
+
+#error{
+    font-size:40px;
+    color:#ffffff;
+    text-align:center;
+}

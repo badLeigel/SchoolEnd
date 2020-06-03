@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		{% block css2 %}
+		<link rel="stylesheet" type="text/css" href="/static/css/uploadWorks.css" />
+		{% endblock %}
+	</head>
+	<body>
+		{% block content %}
+			<div id="myContent">
+				<form id='form1' action="/uploadWorks/"method="POST" enctype="multipart/form-data" >
+				{% csrf_token %}
+				<div id="title">
+					<textarea name="title"></textarea>
+				</div>
+				<div id="worksContent">
+					<textarea name="content"></textarea>
+				</div>
+				<input id="works" name="works" type="file" />
+					<input id="video" type="file" name="video" />
+				<div id="uploadButton">
+					<button type="submit">
+						<p>上传</p>
+					</button>
+				</div>
+				</form>
+			</div>
+	{% endblock %}
+	</body>
+	{% block javascript %}
+	<script type="text/javascript" src="/static/js/uploadWorks.js"></script>
+	{% endblock %}
+</html>

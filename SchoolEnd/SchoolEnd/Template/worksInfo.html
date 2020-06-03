@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		{% block css2 %}
+		<link rel="stylesheet" type="text/css" href="/static/css/worksInfo.css" />
+		{% endblock %}
+	</head>
+	<body>
+	{% block content %}
+		<div id="myContent">
+			<video width="550px" src="{{ videoPath }} " height="201px" controls="controls"></video>
+			<p id="title">{{ title }}</p>
+			<div>
+				<p class="content">{{ worksInfo }}</p>
+			</div>
+			<button id="download">
+				<a href="{{ worksPath }}"><p>下载</p></a>
+			</button>
+		</div>
+	{% endblock %}
+	</body>
+</html>
